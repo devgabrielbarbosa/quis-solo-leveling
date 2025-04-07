@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz de Solo Leveling</title>
+  </head>
+  <body>
+    <div id="quiz-container">
+      <h1>Quiz de Solo Leveling</h1>
+      <div id="quiz">
+        <div class="question active" data-question="q1">
+          <p>1. Qual é o nome do protagonista de Solo Leveling?</p>
+          <input type="radio" name="q1" value="Go Gun-Hee" /> Go Gun-Hee<br />
+          <input type="radio" name="q1" value="Cha Hae-In" /> Cha Hae-In<br />
+          <input type="radio" name="q1" value="Sung Jin-Woo" /> Sung Jin-Woo<br />
+          <input type="radio" name="q1" value="Baek Yoon-Ho" /> Baek Yoon-Ho<br />
+          <button onclick="verificarResposta('q1')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q2">
+          <p>2. Qual é a classe inicial de Sung Jin-Woo?</p>
+          <input type="radio" name="q2" value="Caçador de Rank S" /> Caçador de Rank S<br>
+          <input type="radio" name="q2" value="Caçador de Rank E" />Caçador de Rank E<br>
+          <input type="radio" name="q2" value="Mago" /> Mago<br />
+          <input type="radio" name="q2" value="Assassino" /> Assassino<br />
+          <button onclick="verificarResposta('q2')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q3">
+          <p>3. Qual é o nome da guilda mais poderosa da Coreia do Sul?</p>
+          <input type="radio" name="q3" value="Guilda Hunters" /> Guilda Hunters<br />
+          <input type="radio" name="q3" value="Guilda Scavenger" /> Guilda Scavenger<br />
+          <input type="radio" name="q3" value="Guilda Ahjin" /> Guilda Ahjin<br />
+          <input type="radio" name="q3" value="Guilda Sombria" /> Guilda Sombria<br />
+          <button onclick="verificarResposta('q3')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q4">
+          <p>4. Quem é o líder da Guilda Hunters?</p>
+          <input type="radio" name="q4" value="Sung Jin-Woo" /> Sung Jin-Woo<br />
+          <input type="radio" name="q4" value="Baek Yoon-Ho" /> Baek Yoon-Ho<br />
+          <input type="radio" name="q4" value="Go Gun-Hee" /> Go Gun-Hee<br />
+          <input type="radio" name="q4" value="Cha Hae-In" /> Cha Hae-In<br />
+          <button onclick="verificarResposta('q4')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q5">
+          <p>5. Qual é o nome da habilidade especial de Sung Jin-Woo?</p>
+          <input type="radio" name="q5" value="Portal Sombrio" /> Portal Jogador<br />
+          <input type="radio" name="q5" value="Sistema do Jogador" /> Sistema do Sombrio<br />
+          <input type="radio" name="q5" value="Invocação de Sombras" /> Invocação de Sombras<br />
+          <input type="radio" name="q5" value="Controle de Mana" /> Controle de Mana<br />
+          <button onclick="verificarResposta('q5')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q6">
+          <p>6. Qual é o nome da primeira sombra que Sung Jin-Woo invoca?</p>
+          <input type="radio" name="q6" value="Tusk" /> Tusk<br />
+          <input type="radio" name="q6" value="Soldado de Ferro" /> Soldado de Ferro<br />
+          <input type="radio" name="q6" value="Igris" /> Igris<br />
+          <input type="radio" name="q6" value="Beru" /> Beru<br />
+          <button onclick="verificarResposta('q6')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q7">
+          <p>7. Quem é Cha Hae-In?</p>
+          <input type="radio" name="q7" value="Uma caçadora de Rank S" /> Uma caçadora de Rank S<br />
+          <input type="radio" name="q7" value="Uma sombra" /> Uma sombra<br>
+          <input type="radio" name="q7" value="Uma vilã" /> Uma vilã <br>
+          <input type="radio" name="q7" value="Uma curandeira" /> Uma curandeira<br />
+          <button onclick="verificarResposta('q7')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q8">
+          <p>8. Qual é o nome do monarca que Sung Jin-Woo enfrenta no final?</p>
+  
+          <input type="radio" name="q8" value="Monarca da Destruição" /> Monarca da Destruição<br />
+          <input type="radio" name="q8" value="Monarca das Sombras" /> Monarca das Sombras<br />
+          <input type="radio" name="q8" value="Monarca da Geada" /> Monarca da Geada<br />
+          <input type="radio" name="q8" value="Monarca da Luz" /> Monarca da Luz<br />
+          <button onclick="verificarResposta('q8')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q9">
+          <p>9. Qual é o nome da guilda criada por Sung Jin-Woo?</p>
+          <input type="radio" name="q9" value="Guilda Hunters" /> Guilda Hunters<br />
+          <input type="radio" name="q9" value="Guilda Ahjin" /> Guilda Ahjin<br />
+          <input type="radio" name="q9" value="Guilda Sombria" /> Guilda Sombria<br />
+          <input type="radio" name="q9" value="Guilda Scavenger" /> Guilda Scavenger<br />
+          <button onclick="verificarResposta('q9')">Responder</button>
+        </div>
+
+        <div class="question" data-question="q10">
+          <p>10. Qual é o nome do pai de Sung Jin-Woo?</p>
+          <input type="radio" name="q10" value="Go Gun-Hee" /> Go Gun-Hee<br />
+          <input type="radio" name="q10" value="Baek Yoon-Ho" /> Baek Yoon-Ho<br />
+          <input type="radio" name="q10" value="Sung Il-Hwan" /> Sung Il-Hwan<br />
+          <input type="radio" name="q10" value="Cha Hae-In" /> Cha Hae-In<br />
+          <button onclick="verificarResposta('q10')">Responder</button>
+        </div>
+
+        <div id="resultado" class="result"></div>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

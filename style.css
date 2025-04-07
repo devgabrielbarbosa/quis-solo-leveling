@@ -1,0 +1,108 @@
+/* CSS for the quiz application */
+body {
+  font-family: "Arial", sans-serif;
+  background: url('https://criticalhits.com.br/wp-content/uploads/2025/03/0x0-1-696x348.webp') ;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#quiz-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0.8;
+  backdrop-filter: blur(10px);
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+input[type="radio"] {
+  margin-right: 10px;
+}
+.question {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.question.active {
+  display: block;
+  background-color: #f9f9f9;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 20px; 
+  gap: 10px;   
+}
+.question p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.question input {
+  margin-bottom:10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-top: 20px;
+}
+
+.question {
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 768px) {
+  body {
+    background: url('https://criticalhits.com.br/wp-content/uploads/2025/03/0x0-1-696x348.webp') no-repeat center center;
+    background-size: cover;
+  }
+
+  #quiz-container {
+    max-width: 90%; /* Reduz a largura do contêiner em telas menores */
+    padding: 15px;
+  }
+}
